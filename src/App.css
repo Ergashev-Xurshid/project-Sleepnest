@@ -1,4 +1,33 @@
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Unbounded", sans-serif;
+}
+
 ul li a.active{
   font-weight: 700;
   color: #a17f4a;
+}
+
+.hero-keyframe{
+  background-color: #f5efe6;
+  animation: gradientBackground 3s infinite;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-color: #ecdabf;
+}
+25% {
+    background-color: #dcba94;
+}
+50% {
+    background-color: #eabb74;
+}
+75% {
+    background-color: #dcba94;
+}
+100% {
+    background-color: #ecdabf;
+}
 }

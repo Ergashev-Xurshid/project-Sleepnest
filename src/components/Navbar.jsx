@@ -14,13 +14,13 @@ function Navbar() {
             <img src={logo} alt="Company Logo"  className='w-[180px] h-auto'/>
           </a>
           {/* laptop menu  */}
-          <nav className='flex items-center justify-between gap-[15px] tracking-[2px]' >
-            <ul className='flex items-center justify-between '>
+          <nav className='flex items-center justify-between gap-[15px]' >
+            <ul className='hidden lg:flex items-center justify-between '>
               {headerLink.map((item,idx)=>(
                 <li 
                   key={idx}
                   onClick={()=>setActive(idx)}  
-                  className={`${idx === headerLink.length - 1 ? "mr-0" : "mr-[30px]"} w-auto h-auto cursor-pointer`}>
+                  className={`${idx === headerLink.length - 1 ? "mr-0" : "lg:mr-[5px] xl:mr-[30px]  mr-[5px]"} w-auto h-auto cursor-pointer`}>
                   <a className={`
                     ${idx === isActive ? "active" : ""}
                     transition-all duration-300 
@@ -38,7 +38,7 @@ function Navbar() {
               </span>
             </a>
             </ul> 
-            <select className='text-[#ffffffa6] text-[20px] font-bold cursor-pointer bg-[#a17f4a] rounded-xl py-[5px] px-[7px]'>
+            <select className='text-[#ffffffa6]  text-[20px] font-bold cursor-pointer bg-[#a17f4a] rounded-xl py-[5px] px-[7px]'>
               <option value="uz">UZ</option>
               <option value="ru">RU</option>
               <option value="eng">ENG</option>
