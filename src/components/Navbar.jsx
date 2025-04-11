@@ -6,7 +6,7 @@ import { FcLike } from "react-icons/fc";
 function Navbar() {
   const [isActive , setActive]=useState(0)
   return (
-    <header className="fixed shadow-lg left-0 top-0 right-0 bg-white py-[10px] z-20 transition-all ease-linear">
+    <header className="fixed shadow-lg left-0 top-0 right-0 bg-white py-[10px] z-99 transition-all ease-linear">
       <div className='container mx-auto'>
         <div className='flex items-center justify-between  px-5 mx-[15.4px]'>
           {/*header logo */}

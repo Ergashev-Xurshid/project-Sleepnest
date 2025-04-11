@@ -3,12 +3,14 @@
   scroll-behavior: smooth;
   font-family: "Unbounded", sans-serif;
 }
-
+/* navbar  css*/
 ul li a.active{
   font-weight: 700;
   color: #a17f4a;
 }
 
+
+/* home:hero css */
 .hero-keyframe{
   background-color: #f5efe6;
   animation: gradientBackground 3s infinite;
