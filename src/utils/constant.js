@@ -44,3 +44,5 @@ export const heroIcons = [
     text:"All payment methods accepted"
   },
 ]
+
+
