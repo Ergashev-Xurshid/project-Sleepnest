@@ -2,6 +2,7 @@
 import './App.css'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import About from './pages/About/About'
 import Home from './pages/home/Home'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
      <Navbar/>
      <main>
         {/* <Home/>  */}
+        <About/>
      </main>
      <Footer/>
     </>

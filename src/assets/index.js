@@ -10,3 +10,6 @@ export {default as w1 } from "./w-1.jpg";
 export {default as new1 } from "./newImg1.png";
 export {default as new2 } from "./newImg2.png";
 export {default as new3 } from "./newImg3.png";
+
+// about 
+export {default as aboutImg } from "./aboutUs.png";
