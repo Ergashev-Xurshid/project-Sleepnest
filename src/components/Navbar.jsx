@@ -2,9 +2,12 @@ import React, { useState } from 'react'
 import { headerLink } from '../utils/constant'
 import { logo } from '../assets'
 import { FcLike } from "react-icons/fc";
+import { useFavoritesStore } from '../store/useFavoritesStore';
 
 function Navbar() {
   const [isActive , setActive]=useState(0)
+  const { favorites } = useFavoritesStore();
+  const count = favorites.length;
   return (
     <header className="fixed shadow-lg left-0 top-0 right-0 bg-white py-[10px] z-99 transition-all ease-linear">
       <div className='container mx-auto'>
@@ -33,8 +36,8 @@ function Navbar() {
               ))}
               <a className='relative  text-[20px] cursor-pointer  py-[5px] px-2'>
               <FcLike size={30}/>
-              <span className='inline-block absolute top-[-1px] right-[-3px] text-white bg-black text-[12px] rounded-full py-[1px] px-2'>
-                1
+              <span className='inline-block absolute top-[1px] right-[-1px] text-white bg-black text-[8px] rounded-full py-[2px] px-[6px]'>
+                {count}
               </span>
             </a>
             </ul> 
