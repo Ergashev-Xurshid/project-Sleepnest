@@ -13,8 +13,6 @@ export const headerLink = [
   },
 ]
 
-
-
 // home:hero
 import heroIcon1 from "../assets/hero-icon-1.svg"
 import heroIcon2 from "../assets/hero-icon-2.svg"
@@ -45,4 +43,28 @@ export const heroIcons = [
   },
 ]
 
+// newsItems 
+import { new1, new2, new3 } from "../assets"
 
+
+
+export const newsItems = [
+  {
+    date:"10/05/2024",
+    title:"How to choose the perfect gadgets",
+    text:"When the beautiful valley fills with steam and the meridian sun hits the hill...",
+    img:new1
+  },
+  {
+    date:"10/05/2024",
+    title:"How to use modern technology",
+    text:"Interesting stories about how technology changes our lives...",
+    img:new3
+  },
+  {
+    date:"10/05/2024",
+    title:"Ways to implement creative ideas",
+    text:"What difficulties are encountered in the process of making many new discoveries...",
+    img:new2
+  },
+]

@@ -1,6 +1,6 @@
 import React from 'react'
 import MainFeaturesBanner from './MainFeaturesBanner'
-import { banner1, banner2 } from '../../assets'
+import { banner1, banner2, banner3 } from '../../assets'
 import MainProductCards from './MainProductCards'
 
 function MainFeatures() {
@@ -13,7 +13,7 @@ function MainFeatures() {
       <MainFeaturesBanner style={"bg-[#7f54b3]"} bannerIMG={banner2}/>
       <MainProductCards title={"Autumn Collection"}/>
       {/* Summer  */}
-      <MainFeaturesBanner style={"bg-[#7f54b3]"} bannerIMG={banner2}/>
+      <MainFeaturesBanner style={"bg-[#236f48]"} bannerIMG={banner3}/>
       <MainProductCards title={"Summer Collection"}/>
     </section>
   )
