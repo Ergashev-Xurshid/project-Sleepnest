@@ -1,0 +1,39 @@
+{
+  "header": {
+    "home": "Bosh sahifa",
+    "collection": "To'plam",
+    "about": "Biz haqimizda",
+    "contact": "Kontaktlar"
+  },
+  "home-hero-title": "Atrof-muhit",
+  "home-hero-subTitle": "Toza uyqu",
+  "home-hero-text": "Mahsulotlar",
+  "free-delivery-title": "Yetkazib berish bepul",
+  "free-delivery-text": "Barcha buyurtmalar uchun bepul yetkazib berish",
+  "money-back-title": "Qaytish kafolati",
+  "money-back-text": "30 kunlik pulni qaytarish",
+  "support-title": "24/7 onlayn qo'llab-quvvatlash",
+  "support-text": "24/7 texnik yordam",
+  "secure-payment-title": "Xavfsiz to'lov",
+  "secure-payment-text": "Barcha to'lov usullari qabul qilinadi",
+
+    "features": {
+      "freeDelivery": {
+        "title": "Yetkazib berish bepul",
+        "text": "Barcha buyurtmalar uchun bepul yetkazib berish"
+      },
+      "moneyBack": {
+        "title": "Qaytish kafolati",
+        "text": "30 kunlik pulni qaytarish"
+      },
+      "support": {
+        "title": "24/7 onlayn qo'llab-quvvatlash",
+        "text": "24/7 texnik yordam"
+      },
+      "securePayment": {
+        "title": "Xavfsiz to'lov",
+        "text": "Barcha to'lov usullari qabul qilinadi"
+      }
+    }
+}
+  

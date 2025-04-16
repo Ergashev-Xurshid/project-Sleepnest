@@ -1,13 +1,24 @@
 import React, { useState } from 'react'
-import { headerLink } from '../utils/constant'
+import { headerLinks } from '../utils/constant'
 import { logo } from '../assets'
 import { FcLike } from "react-icons/fc";
 import { useFavoritesStore } from '../store/useFavoritesStore';
+import { useTranslation } from 'react-i18next';
+
 
 function Navbar() {
   const [isActive , setActive]=useState(0)
   const { favorites } = useFavoritesStore();
   const count = favorites.length;
+  // i18next
+  const LngValue = localStorage.getItem("i18nextLng") 
+
+  const { t , i18n} = useTranslation();
+  const handleChange = (e)=>{
+    const selectLng = e.target.value;
+    i18n.changeLanguage(selectLng)
+    localStorage.setItem('i18nextLng', selectLng);
+  }
   return (
     <header className="fixed shadow-lg left-0 top-0 right-0 bg-white py-[10px] z-99 transition-all ease-linear">
       <div className='container mx-auto'>
@@ -19,18 +30,18 @@ function Navbar() {
           {/* laptop menu  */}
           <nav className='flex items-center justify-between gap-[15px]' >
             <ul className='hidden lg:flex items-center justify-between '>
-              {headerLink.map((item,idx)=>(
+              {headerLinks.map((item,idx)=>(
                 <li 
                   key={idx}
                   onClick={()=>setActive(idx)}  
-                  className={`${idx === headerLink.length - 1 ? "mr-0" : "lg:mr-[5px] xl:mr-[30px]  mr-[5px]"} w-auto h-auto cursor-pointer`}>
+                  className={`${idx === headerLinks.length - 1 ? "mr-0" : "lg:mr-[5px] xl:mr-[30px]  mr-[5px]"} w-auto h-auto cursor-pointer`}>
                   <a className={`
                     ${idx === isActive ? "active" : ""}
                     transition-all duration-300 
                     font-normal text-[20px] text-[#00000098] py-[5px] px-2 
                     hover:text-[#a17f4a]
                     `}>
-                    {item.title}
+                    {t(item.key)}
                   </a>
                 </li>
               ))}
@@ -41,10 +52,10 @@ function Navbar() {
               </span>
             </a>
             </ul> 
-            <select className='text-[#ffffffa6]  text-[20px] font-bold cursor-pointer bg-[#a17f4a] rounded-xl py-[5px] px-[7px]'>
+            <select value={LngValue} onChange={handleChange} className='text-[#ffffffa6]  text-[20px] font-bold cursor-pointer bg-[#a17f4a] rounded-xl py-[5px] px-[7px]'>
+              <option value="eng">ENG</option>
               <option value="uz">UZ</option>
               <option value="ru">RU</option>
-              <option value="eng">ENG</option>
             </select>
           </nav>
         </div>

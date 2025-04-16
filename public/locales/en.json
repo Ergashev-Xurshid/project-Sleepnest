@@ -1,0 +1,38 @@
+{
+  "header": {
+    "home": "Home",
+    "collection": "Collection",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "home-hero-title": "Environmental",
+  "home-hero-subTitle": "Clean Sleep",
+  "home-hero-text": "Products",
+  "free-delivery-title": "Free Delivery",
+  "free-delivery-text": "Free delivery on all orders",
+  "money-back-title": "Money-back Guarantee",
+  "money-back-text": "30-day money-back guarantee",
+  "support-title": "24/7 Online Support",
+  "support-text": "24/7 technical support",
+  "secure-payment-title": "Secure Payment",
+  "secure-payment-text": "All payment methods accepted",
+
+  "features": {
+    "freeDelivery": {
+      "title": "Free Delivery",
+      "text": "Free delivery on all orders"
+    },
+    "moneyBack": {
+      "title": "Return Guarantee",
+      "text": "30-day refund"
+    },
+    "support": {
+      "title": "24/7 Online Support",
+      "text": "24/7 technical support"
+    },
+    "securePayment": {
+      "title": "Secure Payment",
+      "text": "All payment methods accepted"
+    }
+  }
+}

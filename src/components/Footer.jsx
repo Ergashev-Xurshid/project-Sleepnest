@@ -1,6 +1,6 @@
 import React from 'react'
 import { logo } from '../assets'
-import { headerLink } from '../utils/constant'
+import { headerLinks } from '../utils/constant'
 
 function Footer() {
   return (
@@ -14,7 +14,7 @@ function Footer() {
         </div>
         <ul>
           <h3 className='text-[1.5em] font-bold my-5'>menu</h3>
-          {headerLink.map((item, idx) => (
+          {headerLinks.map((item, idx) => (
             <li
               key={idx}
               className={`mt-[10px] cursor-pointer`}>

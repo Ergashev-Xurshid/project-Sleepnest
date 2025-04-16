@@ -1,17 +1,9 @@
-export const headerLink = [
-  {
-    title:"Bosh sahifa"
-  },
-  {
-    title:"To'plam"
-  },
-  {
-    title:"Biz haqimizda"
-  },
-  {
-    title:"Kontaktlar"
-  },
-]
+export const headerLinks = [
+    { key: "header.home", path: "/" },
+    { key: "header.collection", path: "/collection" },
+    { key: "header.about", path: "/about" },
+    { key: "header.contact", path: "/contact" }
+  ];
 
 // home:hero
 import heroIcon1 from "../assets/hero-icon-1.svg"
@@ -21,26 +13,22 @@ import heroIcon4 from "../assets/hero-icon-4.svg"
 
 
 export const heroIcons = [
-  {
-    img:heroIcon1,
-    title:"Secure Payment",
-    text:"All payment methods accepted"
-  },
-  {
-    img:heroIcon2,
-    title:"Secure Payment",
-    text:"All payment methods accepted"
-  },
-  {
-    img:heroIcon3,
-    title:"Secure Payment",
-    text:"All payment methods accepted"
-  },
-  {
-    img:heroIcon4,
-    title:"Secure Payment",
-    text:"All payment methods accepted"
-  },
+{ title:"features.freeDelivery.title",
+  text:"features.freeDelivery.text",
+  img:heroIcon1},
+  
+{ title:"features.moneyBack.title",
+  text:"features.moneyBack.text",
+  img:heroIcon2},
+  
+{ title:"features.support.title",
+  text:"features.support.text",
+  img:heroIcon3},
+  
+{ title:"features.securePayment.title",
+  text:"features.securePayment.text",
+  img:heroIcon4},
+  
 ]
 
 // newsItems 

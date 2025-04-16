@@ -1,0 +1,38 @@
+{
+  "header": {
+    "home": "Главная",
+    "collection": "Коллекция",
+    "about": "О нас",
+    "contact": "Контакты"
+  },
+  "home-hero-title": "Экология",
+  "home-hero-subTitle": "Чистый сон",
+  "home-hero-text": "Продукты",
+  "free-delivery-title": "Бесплатная доставка",
+  "free-delivery-text": "Бесплатная доставка на все заказы",
+  "money-back-title": "Гарантия возврата",
+  "money-back-text": "30-дневный возврат денег",
+  "support-title": "Поддержка 24/7 онлайн",
+  "support-text": "Техническая поддержка 24/7",
+  "secure-payment-title": "Безопасная оплата",
+  "secure-payment-text": "Принимаются все способы оплаты",
+
+  "features": {
+    "freeDelivery": {
+      "title": "Бесплатная доставка",
+      "text": "Бесплатная доставка на все заказы"
+    },
+    "moneyBack": {
+      "title": "Гарантия возврата",
+      "text": "30-дневный возврат денег"
+    },
+    "support": {
+      "title": "Поддержка 24/7 онлайн",
+      "text": "Техническая поддержка 24/7"
+    },
+    "securePayment": {
+      "title": "Безопасная оплата",
+      "text": "Принимаются все способы оплаты"
+    }
+  }
+}
