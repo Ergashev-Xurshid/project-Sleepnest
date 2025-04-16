@@ -34,8 +34,9 @@ ul li a.active{
 }
 100% {
     background-color: #ecdabf;
+    
 }
 }
-.features-banner-shadow {
+.features-banner-shadow:hover {
   box-shadow: rgba(250, 2, 2, 0.3) 10px 10px 20px, rgba(255, 0, 0, 0.5) 0px -10px 20px;
 }
