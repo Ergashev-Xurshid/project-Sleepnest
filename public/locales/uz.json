@@ -5,7 +5,7 @@
     "about": "Biz haqimizda",
     "contact": "Kontaktlar"
   },
-  "home-hero-title": "Atrof-muhit",
+  "home-hero-title": "Ekologiya",
   "home-hero-subTitle": "Toza uyqu",
   "home-hero-text": "Mahsulotlar",
   "free-delivery-title": "Yetkazib berish bepul",
@@ -16,24 +16,112 @@
   "support-text": "24/7 texnik yordam",
   "secure-payment-title": "Xavfsiz to'lov",
   "secure-payment-text": "Barcha to'lov usullari qabul qilinadi",
-
-    "features": {
-      "freeDelivery": {
-        "title": "Yetkazib berish bepul",
-        "text": "Barcha buyurtmalar uchun bepul yetkazib berish"
-      },
-      "moneyBack": {
-        "title": "Qaytish kafolati",
-        "text": "30 kunlik pulni qaytarish"
-      },
-      "support": {
-        "title": "24/7 onlayn qo'llab-quvvatlash",
-        "text": "24/7 texnik yordam"
-      },
-      "securePayment": {
-        "title": "Xavfsiz to'lov",
-        "text": "Barcha to'lov usullari qabul qilinadi"
-      }
+  "features": {
+    "freeDelivery": {
+      "title": "Yetkazib berish bepul",
+      "text": "Barcha buyurtmalar uchun bepul yetkazib berish"
+    },
+    "moneyBack": {
+      "title": "Qaytish kafolati",
+      "text": "30 kunlik pulni qaytarish"
+    },
+    "support": {
+      "title": "24/7 onlayn qo'llab-quvvatlash",
+      "text": "24/7 texnik yordam"
+    },
+    "securePayment": {
+      "title": "Xavfsiz to'lov",
+      "text": "Barcha to'lov usullari qabul qilinadi"
     }
+  },
+  "hero-baner-text": "Material sifati",
+  "hero-baner-title": "Ekologik Toza Uyqu Mahsulotlari",
+  "hero-baner-title-text": "ko'p yillar davomida butun dunyoda foydalanish uchun paxta matolarini ishlab chiqaradigan kompaniya bo'lib kelgan",
+  "hero-btn": "To'plam",
+  "Winter": "Qish kolleksiyasi",
+  "winter-title": "Qish kolleksiyasi",
+  "winter-text": "Ekologik Toza Uyqu Mahsulotlari",
+  "search_placeholder": "Qidiruv...",
+  "collection_title": "To‘plam",
+  "Barcha": "Barcha",
+  "winter": "Qish",
+  "autumn": "Kuz",
+  "summer": "Yoz",
+  "collection": "To‘plam",
+  "squares": "Kvadratlar",
+  "ikat": "Ikat",
+  "circles": "Doiralar",
+  "geometryBlue": "Geometriya Moviy",
+  "tropicalLeaves": "Tropik Barglar",
+  "bambi": "Bambi",
+  "byzantium": "Vizantiyalik",
+  "eveningGarden": "Kechki Bog‘",
+  "patMarquis": "Pat Markiz",
+  "lavenderRoses": "Lavanda Atirgullari",
+  "Autumn": "Kuz kolleksiyasi",
+  "Autumn-title": "Kuz kolleksiyasi",
+  "safari": "Safari",
+  "multicolorAmethyst": "Rang-barang ametist",
+  "shivaliDecoration": "Shivali bezaklari",
+  "emeraldAb": "Zumrad (AB)",
+  "malachiteBox": "Malaxit qutisi",
+  "scentsOfSpring": "Bahor hidlari",
+  "fallingAutumnLeaves": "Kuzgi barglar tushishi (AB)",
+  "blueBreeze": "Moviy shabada",
+  "blueWater": "Moviy suv",
+  "plaid": "Katakcha naqsh",
+  "Summer": "Yozgi kolleksiya",
+  "Summer-title": "Yozgi kolleksiya",
+  "vintageStyle": "Vintage uslubi",
+  "rockingDandelion": "Tebranayotgan karahindiba",
+  "frenchRiviera": "Fransuz Rivierasi",
+  "dollyTheSheep": "Qo‘y Dolly",
+  "alpinePlants": "Alp o‘simliklari",
+  "inspirational": "Ilhomlantiruvchi",
+  "greenLotus": "Yashil lotus",
+  "mountainCorn": "Tog‘ jo‘xori",
+  "sakuraBranch": "Sakura shoxchasi",
+  "oliveBranch": "Zaytun shoxchasi",
+  "news": "Yangiliklar",
+  "by-admin": "admin tomonidan",
+  "news-Item-1": {
+    "news-title": "Qanday qilib mukammal gadjetlarni tanlash mumkin",
+    "news-text": "Go'zal vodiyning bug' bilan to'lganda va meridian quyoshi tepalikka urilganda..."
+  },
+  "news-Item-2": {
+    "news-title": "Zamonaviy texnologiyalardan qanday foydalanish kerak",
+    "news-text": "Texnologiyalar hayotimizni qanday o'zgartirishi haqida qiziqarli hikoyalar..."
+  },
+  "news-Item-3": {
+    "news-title": "Kreativ g'oyalarni amalga oshirish yo'llari",
+    "news-text": "Ko'plab yangi kashfiyotlar yaratish jarayonida qanday qiyinchiliklarga duch kelinadi..."
+  },
+  "footer-text": "“Ekologik Toza Uyqu Mahsulotlat” koʻp yillardan buyon butun dunyoda foydalanish uchun paxta matolari ishlab chiqaradigan kompaniya hisoblanadi.",
+  "menyu": "menyu",
+  "Contacts": "Kontaktlar",
+  "location": "Buxoro, st. Alpomish 80.",
+  "con-email": "Email: sleepnest@gamil.com",
+  "con-tg": "Telegram: sleepnest",
+  "f-email-title": "Elektron pochtamizga obuna bo'ling",
+  "f-email-b": "Kamida bitta roʻyxatni tanlang.",
+  "f-bottom": "© 2024 MChJ Ekologik Toza Uyqu Mahsulotlari Barcha huquqlar himoyalangan.",
+  "f-submit": "Obuna Bo'ling",
+  "about-title": "Ekologik Toza Uyqu Mahsulotlari",
+  "about-intro": "Matolarimiz va ekologik sumkalar ishlab chiqaruvchi korxonamiz uzoq yillardan beri paxta matolarini global bozorda yetkazib berib kelmoqda.",
+  "about-history": "Korxonamiz o‘z faoliyatini 17 yil avval boshlagan va shu vaqt ichida mijozlarimiz ishonchini qozonib kelmoqda.",
+  "about-goal": "Kompaniyamizning bosh maqsadi — sifatli, bardoshli va ekologik xavfsiz mahsulotlarni yaratishdir.",
+  "about-standards": "Ishlab chiqarish jarayonlari butunlay ekologik standartlarga mos bo‘lib, atrof-muhitga zarar yetkazmaslikka qaratilgan.",
+  "about-technology": "Zamonaviy texnologiyalardan foydalanib, turli xil paxta mahsulotlarini yuqori darajada ishlab chiqarish imkoniyatiga egamiz.",
+  "about-representative": "Shuningdek, biz DongJu to‘quv uskunalarining O‘zbekistondagi rasmiy vakili sifatida faoliyat yuritamiz.",
+  "about-production": "Har yili fabrikamizda 80 dan ortiq mahsulot turlari ishlab chiqariladi, buning natijasida kompaniya yuqori sifat va barqaror ishlab chiqarishni ta’minlaydi.",
+  "about-equipment": "Korxonamizda zamonaviy texnologiyalar asosida 50 dan ortiq to‘quv dastgohlari faoliyat ko‘rsatmoqda.",
+  "about-quality": "Bizning ishlab chiqarish jarayonlarimizda faqat sifatli va ekologik xavfsiz mahsulotlar ishlab chiqarishni ta’minlaymiz.",
+  "about-bags": "Mijozlarimiz talablariga javoban, ekologik xavfsiz va zamonaviy dizaynli sumkalar ishlab chiqarish yo‘lga qo‘yilgan.",
+  "about-service": "Kompaniyamiz har doim mijozlariga sifatli mahsulot va yuqori darajadagi xizmat ko‘rsatishdan mamnun.",
+  "formTitle": "Aloqa",
+  "emailPlaceholder": "Email manzilingiz",
+  "phonePlaceholder": "Telefon raqamingiz",
+  "messagePlaceholder": "Agar xabaringiz bo‘lsa, shu yerga yozing",
+  "sendButton": "Yuborish"
+
 }
-  

@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { FaSearch } from "react-icons/fa";
 import { products } from '../../utils/productsCards';
+import { useTranslation } from 'react-i18next';
 function Toplam() {
 
   const [selectedCategory, setSelectedCategory] = useState("Barcha");
   const categories = ["Barcha", "Winter", "Autumn", "Summer"];
   const [searchTerm, setSearchTerm] = useState("");
-
+  const {t}=useTranslation()
 
   return (
     <section className='w-full  max-w-[1450px] mx-auto px-4 lg:px-[20px]  pt-[100px]'>
@@ -17,10 +18,10 @@ function Toplam() {
               onChange={(e) => setSearchTerm(e.target.value)}
               className='outline-none'
               type="text"
-              placeholder='Searching for ....' />
-            <button className='bg-[red] p-[15px] text-white text-[14px] font-[400] hover:bg-[black] cursor-pointer transition-all duration-200 rounded-full'><FaSearch /></button>
+              placeholder={t("search_placeholder")} />
+            <a className='bg-[red] p-[15px] text-white text-[14px] font-[400] hover:bg-[black] cursor-pointer transition-all duration-200 rounded-full'><FaSearch /></a>
           </form>
-          <h2 className="text-xl font-bold my-[40px]">Collection</h2>
+          <h2 className="text-xl font-bold my-[40px]">{t("collection")}</h2>
           {categories.map(cat => (
             <button
               key={cat}
@@ -28,7 +29,7 @@ function Toplam() {
               className={`block mb-2 text-left px-2 py-1 cursor-pointer ${selectedCategory === cat ? "font-bold text-yellow-600" : "text-black"
                 }`}
             >
-              {cat} Collection
+              {t(cat)}
             </button>
           ))}
         </div>
@@ -39,14 +40,14 @@ function Toplam() {
                 selectedCategory === "Barcha" || product.category === selectedCategory;
 
               const matchesSearch =
-                product.title.toLowerCase().includes(searchTerm.toLowerCase());
+                product.titleKey.toLowerCase().includes(searchTerm.toLowerCase());
 
               return matchesCategory && matchesSearch;
             })
             .map(product => (
               <div key={product.id}>
-                <img src={product.img} alt={product.title} className="rounded-xl" />
-                <p className="mt-2 text-lg font-medium">{product.title}</p>
+                <img src={product.img} alt={product.titleKey} className="rounded-xl" />
+                <p className="mt-2 text-lg font-medium">{t(product.titleKey)}</p>
               </div>
             ))}
         </div>

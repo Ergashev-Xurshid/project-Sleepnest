@@ -1,5 +1,6 @@
 
 import './App.css'
+import { ToastContainer } from 'react-toastify';
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import About from './pages/About/About'
@@ -14,10 +15,11 @@ function App() {
     <>
      <Navbar/>
      <main>
-        <Home/> 
-        {/* <About/> */}
-        {/* <Contact/> */}
+        {/* <Home/>  */}
+        {/* <About/>   */}
+        <Contact/>
         {/* <Toplam/> */}
+        <ToastContainer />
      </main>
      <Footer/>
     </>

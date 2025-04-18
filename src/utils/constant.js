@@ -39,20 +39,20 @@ import { new1, new2, new3 } from "../assets"
 export const newsItems = [
   {
     date:"10/05/2024",
-    title:"How to choose the perfect gadgets",
-    text:"When the beautiful valley fills with steam and the meridian sun hits the hill...",
+    title:"news-Item-1.news-title",
+    text:"news-Item-1.news-text",
     img:new1
   },
   {
     date:"10/05/2024",
-    title:"How to use modern technology",
-    text:"Interesting stories about how technology changes our lives...",
+    title:"news-Item-2.news-title",
+    text:"news-Item-2.news-text",
     img:new3
   },
   {
     date:"10/05/2024",
-    title:"Ways to implement creative ideas",
-    text:"What difficulties are encountered in the process of making many new discoveries...",
+    title:"news-Item-3.news-title",
+    text:"news-Item-3.news-text",
     img:new2
   },
 ]

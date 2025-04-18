@@ -1,4 +1,4 @@
-import React, { useTransition } from 'react'
+import React from 'react'
 import { heroImg } from '../../assets'
 import { heroIcons } from '../../utils/constant'
 import { useTranslation } from 'react-i18next';
