@@ -3,6 +3,7 @@ import { logo } from '../assets'
 import { headerLinks } from '../utils/constant'
 import { useTranslation } from 'react-i18next'
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 function Footer() {
   const {t}=useTranslation();
 
@@ -54,12 +55,12 @@ function Footer() {
             <li
               key={idx}
               className={`mt-[10px] cursor-pointer`}>
-              <a className={`
+              <Link to={item.path} className={`
               transition-all duration-300 
               font-normal text-[16px] text-[#00000098] py-[5px] px-2 
               hover:text-[red] `}>
                 {t(item.key)}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

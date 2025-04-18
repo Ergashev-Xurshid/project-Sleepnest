@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import { FaSearch } from "react-icons/fa";
 import { products } from '../../utils/productsCards';
 import { useTranslation } from 'react-i18next';
+import { useFavoritesStore } from '../../store/useFavoritesStore';
 function Toplam() {
-
+  const { favorites, toggleFavorite } = useFavoritesStore();
   const [selectedCategory, setSelectedCategory] = useState("Barcha");
   const categories = ["Barcha", "Winter", "Autumn", "Summer"];
   const [searchTerm, setSearchTerm] = useState("");
-  const {t}=useTranslation()
+  const { t } = useTranslation()
 
   return (
     <section className='w-full  max-w-[1450px] mx-auto px-4 lg:px-[20px]  pt-[100px]'>
@@ -44,12 +45,21 @@ function Toplam() {
 
               return matchesCategory && matchesSearch;
             })
-            .map(product => (
-              <div key={product.id}>
-                <img src={product.img} alt={product.titleKey} className="rounded-xl" />
-                <p className="mt-2 text-lg font-medium">{t(product.titleKey)}</p>
+            .map(product => {
+              const isFavorite = favorites.some((fav) => fav.id === product.id);
+              return (
+                <div key={product.id} className="relative cursor-pointer hover:text-[#ff0000]">
+                <div className='hover:scale-[1.1] z-10 rounded-[15px] transition-all duration-500 ease-out overflow-hidden'>
+                  <img src={product.img} alt={product.title} className='w-full h-auto object-cover' />
+                </div>
+                <div onClick={() => toggleFavorite(product)} className="absolute z-20 top-0 right-0 bg-[#d4d4d4] py-2 px-[10px] rounded-full cursor-pointer">
+                  <button className='cursor-pointer'>
+                    {isFavorite ? "❤️" : "🤍"}
+                  </button>
+                </div>
+                <p className="my-4 text-lg font-medium">{t(product.titleKey)}</p>
               </div>
-            ))}
+              )})}
         </div>
       </div>
     </section>

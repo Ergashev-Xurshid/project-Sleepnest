@@ -122,5 +122,19 @@
   "emailPlaceholder": "Ваш email",
   "phonePlaceholder": "Ваш номер телефона",
   "messagePlaceholder": "Пожалуйста, напишите, если у вас есть сообщение",
-  "sendButton": "Отправить"
+  "sendButton": "Отправить",
+  "material-item": "100% хлопковая фланель",
+  "pillowcase-item": "Наволочка: 50x70 см (2 штуки)",
+  "sheet-item": "Простыня: 260×280 см (1 штука)",
+  "duvet-item": "Одеяло: 160x220 см (2 штуки)",
+  "size-item": "Размер: Индивидуальный размер",
+  "manufacturer-item": "Производитель: Экологически чистые товары для сна",
+  "material": "Материал",
+  "pillowcase": "Наволочка",
+  "sheet": "Простыня",
+  "duvet": "Одеяло",
+  "size": "Размер",
+  "manufacturer": "Производитель",
+  "Category":"Категория"
+
 }

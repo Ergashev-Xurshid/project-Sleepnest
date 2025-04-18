@@ -122,5 +122,18 @@
   "emailPlaceholder": "Your email",
   "phonePlaceholder": "Your phone number",
   "messagePlaceholder": "Please write if you have a message",
-  "sendButton": "Send"
+  "sendButton": "Send",
+  "material-item": "100% cotton flannel",
+  "pillowcase-item": "Pillowcase: 50x70 cm (2 pieces)",
+  "sheet-item": "Sheet: 260×280 cm (1 piece)",
+  "duvet-item": "Duvet: 160x220 cm (2 pieces)",
+  "size-item": "Size: Custom size",
+  "manufacturer-item": "Manufacturer: Eco-Friendly Sleep Products",
+  "material": "Material",
+  "pillowcase": "Pillowcase",
+  "sheet": "Sheet",
+  "duvet": "Duvet",
+  "size": "Size",
+  "manufacturer": "Manufacturer",
+  "Category":"Category"
 }

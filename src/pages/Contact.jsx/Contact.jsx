@@ -17,7 +17,7 @@ function Contact() {
 
 
   const [formData , setFormData]=useState({
-    email:'',
+    email:"",
     phone:"",
     text:""
   })

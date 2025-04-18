@@ -122,6 +122,18 @@
   "emailPlaceholder": "Email manzilingiz",
   "phonePlaceholder": "Telefon raqamingiz",
   "messagePlaceholder": "Agar xabaringiz bo‘lsa, shu yerga yozing",
-  "sendButton": "Yuborish"
-
+  "sendButton": "Yuborish",
+  "material-item": "100% paxta flanel",
+  "pillowcase-item": "Yostiq kiyimi: 50x70 sm (2 dona)",
+  "sheet-item": "Choyshab: 260×280 sm (1 dona)",
+  "duvet-item": "Ko'rpa-to'shak: 160x220 sm (2 dona)",
+  "size-item": "Hajmi: Maxsus o'lcham",
+  "manufacturer-item": "Ekologik Toza Uyqu Mahsulotlat",
+  "material": "Material",
+  "pillowcase": "Yostiq kiyimi",
+  "sheet": "Choyshab",
+  "duvet": "Ko'rpa-to'shak",
+  "size": "Hajmi",
+  "manufacturer": "Ishlab chiqaruvchi",
+  "Category":"Kategoriya"
 }
