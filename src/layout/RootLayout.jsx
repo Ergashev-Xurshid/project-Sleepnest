@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Outlet } from 'react-router-dom'
+import TelegramButton from '../components/TelegramButton'
 
 function RootLayout() {
   return (
@@ -11,9 +12,10 @@ function RootLayout() {
       </header>
       <main>
         <Outlet/>
+        <TelegramButton/>
       </main>
       <footer>
-        <Footer/>
+        {/* <Footer/> */}
       </footer>
     </>
   )

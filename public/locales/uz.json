@@ -135,5 +135,13 @@
   "duvet": "Ko'rpa-to'shak",
   "size": "Hajmi",
   "manufacturer": "Ishlab chiqaruvchi",
-  "Category":"Kategoriya"
+  "Category":"Kategoriya",
+  "R-title-1":"Mahsulot haqida sharhlar",
+  "R-title-2":"O'z sharhingizni qoldiring",
+  "Rating":"Reyting",
+  "y-r":"Sizning reytingingiz:",
+  "Name":"Ism",
+  "Email ":"Elektron pochta",
+  "Your-review":"Sizning sharhingiz",
+  "s-r":"Sharhni yuborish"
 }

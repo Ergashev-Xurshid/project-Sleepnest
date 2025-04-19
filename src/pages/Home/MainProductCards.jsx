@@ -12,9 +12,9 @@ function MainProductCards({title , selectCategory}) {
 
   return (
     <div className='pt-[100px]'>
-      <h1 className='text-center text-[35px] text-black my-[30px]'>{title}</h1>
+      <h1 className='text-center text-[20px] md:text-[35px] text-black my-[30px]'>{title}</h1>
       <p className='text-center text-[16px] text-black mb-[80px]'>{t("winter-text")}</p>
-      <ul className='grid grid-cols-5 gap-[30px]'>
+      <ul className='grid grid-cols-2  md:grid-cols-3  lg:grid-cols-4 xl:grid-cols-5 gap-[30px]'>
         {products.map((item, idx) => {
           const isFavorite = favorites.some((fav) => fav.id === item.id);
           if(item.category === selectCategory){
@@ -30,7 +30,7 @@ function MainProductCards({title , selectCategory}) {
                     {isFavorite ? "❤️" : "🤍"}
                   </button>
                 </div>
-                <p className="my-4 text-lg font-medium">{t(item.titleKey)}</p>
+                <p className="my-4 text-[14px] md:text-lg font-medium">{t(item.titleKey)}</p>
               </div>
             );
           }

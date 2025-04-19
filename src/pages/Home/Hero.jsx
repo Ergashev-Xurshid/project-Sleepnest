@@ -29,13 +29,13 @@ function Hero() {
         </div>
       </div>
       <div className='pt-[100px]'>
-        <ul className='grid grid-cols-2 md:grid-cols-4 items-center gap-[30px]'>
+        <ul className='grid grid-cols-2 md:grid-cols-4 items-start lg:items-center gap-[10px] lg:gap-[30px]'>
           {heroIcons.map((item,idn)=> (
             <li key={idn} className='cursor-pointer flex flex-col xl:flex-row max-xl:justify-center items-center gap-5'>
               <img className='max-w-full h-[50px]' src={item.img} alt="icon" />
               <div>
-                <h3 className='max-xl:text-center   text-[16px] font-bold'>{t(item.title)}</h3>
-                <p className='max-xl:text-center   text-[14px] font-medium text-[#aaa] my-[14px] max-w-[250px] '>{t(item.text)}</p>
+                <h3 className='max-xl:text-center  text-[14px] lg:text-[16px] font-bold'>{t(item.title)}</h3>
+                <p className='max-xl:text-center max-w-[300px]  text-[10px] lg:text-[14px] font-medium text-[#aaa] my-[14px] lg:max-w-[250px] '>{t(item.text)}</p>
               </div>
             </li>
           ))}

@@ -135,5 +135,13 @@
   "duvet": "Duvet",
   "size": "Size",
   "manufacturer": "Manufacturer",
-  "Category":"Category"
+  "Category": "Category",
+  "R-title-1": "Product Reviews",
+  "R-title-2": "Leave your review",
+  "Rating":"Rating",
+  "y-r":"Your rating",
+  "Name":"Name ",
+  "Email ":"Email ",
+  "Your-review":"Your review",
+  "s-r":"Submit a review"
 }

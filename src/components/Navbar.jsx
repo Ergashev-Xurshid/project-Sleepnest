@@ -42,7 +42,7 @@ function Navbar() {
             <img src={logo} alt="Company Logo" className='w-[180px] h-auto' />
           </Link>
           {/* laptop menu  */}
-          <nav className='flex items-center justify-between gap-[15px]' >
+          <nav className='w-[70%] flex items-center justify-end gap-[5px] lg:gap-[15px]' >
             <ul className='hidden lg:flex items-center justify-between '>
               {headerLinks.map((item, idx) => (
                 <li
@@ -52,7 +52,7 @@ function Navbar() {
                   <Link to={item.path} className={`
                     ${idx === isActive ? "active" : ""}
                     transition-all duration-300 
-                    font-normal text-[20px] text-[#00000098] py-[5px] px-2 
+                    font-normal text-[16px] lg:text-[15px] text-[#00000098] py-[5px] px-2 
                     hover:text-[#a17f4a]
                     `}>
                     {t(item.key)}
