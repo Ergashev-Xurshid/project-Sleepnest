@@ -15,7 +15,7 @@ function RootLayout() {
         <TelegramButton/>
       </main>
       <footer>
-        {/* <Footer/> */}
+        <Footer/>
       </footer>
     </>
   )
