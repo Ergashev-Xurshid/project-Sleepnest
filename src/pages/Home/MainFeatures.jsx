@@ -12,10 +12,10 @@ function MainFeatures() {
       <MainFeaturesBanner style={"bg-[#464351]"} bannerIMG={banner1}/>
       <MainProductCards title={t("winter-title")} selectCategory={"Winter"}/>
       {/* Autumn */}
-      {/* <MainFeaturesBanner style={"bg-[#7f54b3]"} bannerIMG={banner2}/> */}
+      <MainFeaturesBanner style={"bg-[#7f54b3]"} bannerIMG={banner2}/>
       <MainProductCards title={t("Autumn-title")} selectCategory={"Autumn"}/>
       Summer 
-      {/* <MainFeaturesBanner style={"bg-[#236f48]"} bannerIMG={banner3}/> */}
+      <MainFeaturesBanner style={"bg-[#236f48]"} bannerIMG={banner3}/>
       <MainProductCards title={t("Summer-title")} selectCategory={"Summer"}/>
     </section>
   )
