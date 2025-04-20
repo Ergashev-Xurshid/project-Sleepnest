@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { headerLinks } from '../utils/constant';
 import { useTranslation } from 'react-i18next';
-
+import { useFavoritesStore } from '../store/useFavoritesStore';
+import { FcLike } from "react-icons/fc";
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isActive, setActive] = useState(0)
   const { t } = useTranslation();
-
+  const likedCount = useFavoritesStore((state) => state.likedCount());
   return (
     <div className='lg:hidden inline-block mx-2'>
       <div
@@ -36,9 +37,9 @@ const HamburgerMenu = () => {
                 key={idx}
                 onClick={() => setActive(idx)}
                 className={`${idx === headerLinks.length - 1 ? "mr-0" : "lg:mr-[5px] xl:mr-[30px]  mr-[5px]"} w-auto my-4 h-auto cursor-pointer`}>
-                <Link 
-                  onClick={()=>setIsOpen(false)}
-                  to={item.path} 
+                <Link
+                  onClick={() => setIsOpen(false)}
+                  to={item.path}
                   className={`
                  ${idx === isActive ? "active" : ""}
                  transition-all duration-300 
@@ -47,9 +48,21 @@ const HamburgerMenu = () => {
                  `}>
                   {t(item.key)}
                 </Link>
+
               </li>
             ))}
           </ul>
+          <div className='w-full flex  justify-center'>
+            <Link 
+            onClick={() => setIsOpen(false)}
+            to={"/liks"} 
+            className=' lg:hidden inline-block relative  text-[20px] cursor-pointer max-lg:mx-4 py-[5px] px-2'>
+              <FcLike size={30} />
+              <span className='inline-block absolute top-[1px] right-[-1px] text-white bg-black text-[8px] rounded-full py-[2px] px-[6px]'>
+                {likedCount}
+              </span>
+            </Link>
+          </div>
         </div>
       )}
     </div>

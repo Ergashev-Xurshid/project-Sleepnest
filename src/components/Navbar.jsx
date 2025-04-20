@@ -60,7 +60,7 @@ function Navbar() {
                 </li>
               ))}
             </ul>
-            <Link to={"/liks"} className='hidden lg:inline-block relative  text-[20px] cursor-pointer max-lg:mx-4 py-[5px] px-2'>
+              <Link to={"/liks"} className='hidden lg:inline-block relative  text-[20px] cursor-pointer max-lg:mx-4 py-[5px] px-2'>
                 <FcLike size={30} />
                 <span className='inline-block absolute top-[1px] right-[-1px] text-white bg-black text-[8px] rounded-full py-[2px] px-[6px]'>
                   {likedCount}
