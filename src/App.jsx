@@ -17,6 +17,7 @@ import {
 
 import RootLayout from './layout/RootLayout';
 import ProductDetails from './pages/Product/ProductDetails';
+import Linke from './components/Linke';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/collection' element={<Toplam/>}/>
         <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path='/liks' element={<Linke/>}/>
       </Route>
     )
   )

@@ -23,8 +23,8 @@ function Navbar() {
 
 
   const [isActive, setActive] = useState(0)
-  const { favorites } = useFavoritesStore();
-  const count = favorites.length;
+
+  const likedCount = useFavoritesStore((state) => state.likedCount());
   // i18next
   const LngValue = localStorage.getItem("i18nextLng")
 
@@ -54,20 +54,19 @@ function Navbar() {
                     ${idx === isActive ? "active" : ""}
                     transition-all duration-300 
                     font-normal text-[16px] lg:text-[15px] text-[#00000098] py-[5px] px-2 
-                    hover:text-[#a17f4a]
-                    `}>
+                    hover:text-[#a17f4a] `}>
                     {t(item.key)}
                   </Link>
                 </li>
               ))}
             </ul>
-            <a className='relative  text-[20px] cursor-pointer max-lg:mx-4 py-[5px] px-2'>
+            <Link to={"/liks"} className='hidden lg:inline-block relative  text-[20px] cursor-pointer max-lg:mx-4 py-[5px] px-2'>
                 <FcLike size={30} />
                 <span className='inline-block absolute top-[1px] right-[-1px] text-white bg-black text-[8px] rounded-full py-[2px] px-[6px]'>
-                  {count}
+                  {likedCount}
                 </span>
-              </a>
-            <select value={LngValue} onChange={handleChange} className='text-[#ffffffa6]  text-[20px] font-bold cursor-pointer bg-[#a17f4a] rounded-xl py-[5px] px-[7px]'>
+              </Link>
+            <select value={LngValue} onChange={handleChange} className='text-[#ffffffa6]  text-[14px] md:text-[20px] font-bold cursor-pointer bg-[#a17f4a] rounded-xl py-[5px] px-[7px]'>
               <option value="eng">ENG</option>
               <option value="uz">UZ</option>
               <option value="ru">RU</option>

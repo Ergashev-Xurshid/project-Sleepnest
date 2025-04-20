@@ -1,26 +1,29 @@
+
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { products as initialProducts } from '../utils/productsCards'; 
 
 export const useFavoritesStore = create(
   persist(
-    (set) => ({
-      favorites: [],
-      toggleFavorite: (product) =>
-        set((state) => {
-          const exists = state.favorites.find((item) => item.id === product.id);
-          if (exists) {
-            return {
-              favorites: state.favorites.filter((item) => item.id !== product.id),
-            };
-          } else {
-            return {
-              favorites: [...state.favorites, product],
-            };
-          }
-        }),
+    (set, get) => ({
+      products: initialProducts,
+      
+      toggleLike: (productId) => {
+        set((state) => ({
+          products: state.products.map((product) =>
+            product.id === productId
+              ? { ...product, like: !product.like }
+              : product
+          ),
+        }));
+      },
+
+      likedCount: () => {
+        return get().products.filter((p) => p.like).length;
+      },
     }),
     {
-      name: 'favorites-storage',
+      name: 'products-storage',
     }
   )
 );
