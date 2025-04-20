@@ -42,7 +42,7 @@ function Footer() {
   };
   return (
     <section>
-      <div className='flex flex-wrap xl:flex-nowrap justify-between  md:gap-[20px] pb-[100px] w-full max-w-[1450px] mx-auto px-4 lg:px-[20px]  pt-[100px]'>
+      <div className='flex flex-wrap xl:flex-nowrap justify-between  md:gap-[20px] pb-[60px] w-full max-w-[1450px] mx-auto px-4 lg:px-[20px]  pt-[100px]'>
         <div className='w-full md:w-[30%] '>
           <a href="#" className='cursor-pointer w-[70%] inline-block'>
             <img src={logo} alt="Company Logo" className='w-full h-auto' />

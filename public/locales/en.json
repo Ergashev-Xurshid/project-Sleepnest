@@ -143,5 +143,6 @@
   "Name":"Name ",
   "Email ":"Email ",
   "Your-review":"Your review",
-  "s-r":"Submit a review"
+  "s-r":"Submit a review",
+  "no_likes_found":"There are no likes here."
 }
