@@ -89,16 +89,16 @@ function ProductDetails() {
   };
   return (
     <div className='w-full max-w-[1480px] mx-auto px-4 lg:px-[20px]  pt-[140px] ' >
-      <div className='flex  gap-[30px]'>
+      <div className='flex flex-col lg:flex-row gap-[30px]'>
         <div
           onMouseMove={handleMouseMove}
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
-          className='w-[50%] relative overflow-hidden rounded-xl'>
+          className='w-full lg:w-[50%] relative overflow-hidden rounded-xl'>
           <img
             src={img}
             alt={titleKey}
-            className="absolute top-0 left-0 w-full  shadow-md h-full mb-6 object-cover transition-transform duration-300"
+            className="lg:absolute top-0 left-0 w-full  shadow-md h-full mb-6 object-cover transition-transform duration-300"
             style={{
               transform: isHovering ? `scale(2)` : `scale(1)`,
               transformOrigin: `${position.x}% ${position.y}%`,
@@ -106,7 +106,7 @@ function ProductDetails() {
             }}
           />
         </div>
-        <div className='w-[50%]'>
+        <div className='w-full lg:w-[50%]'>
           <h1 className="text-3xl font-bold mb-4">{titleKey.toUpperCase()}</h1>
           <table className=" w-full border border-gray-200 text-sm md:text-base">
             <tbody>
@@ -139,8 +139,8 @@ function ProductDetails() {
           <p className='text-[red] my-4 text-[16px]'>{t("Category")} : {t(category)}</p>
         </div>
       </div>
-      <div className='flex justify-between gap-[30px] my-20 pb-20'>
-        <div className='w-1/2'>
+      <div className='flex justify-between md:flex-row flex-col gap-[30px] my-20 pb-20'>
+        <div className='w-full md:w-1/2'>
           <h1 className='text-[30px] mb-[50px] mt-[30px] text-center font-bold tracking-[1.9px]'>{t("R-title-1")}</h1>
           <div>
             {reviewsData.map((review, index) => (
@@ -148,7 +148,7 @@ function ProductDetails() {
               className='border border-[red] rounded-[5px] mb-[10px] p-[10px]'>
                 <div className='flex justify-between items-center'>
                   <h4 className='text-black text-[16px] font-bold capitalize my-2'>{review.name}</h4>
-                  <p> - {review.date}</p>
+                  <p className='text-[12px]'> - {review.date}</p>
                 </div>
                 <p className='text-[#4e4b4b] text-[16px] font-medium my-2'> {t("Rating")}:  {review.rating}/5</p>
                 <p className=' text-[12px] text-blue-500'>{review.message}</p>
@@ -156,7 +156,7 @@ function ProductDetails() {
             ))}
           </div>
         </div>
-        <div className='w-1/2'>
+        <div className='w-full md:w-1/2'>
           <h1 className='text-[30px] mb-[50px] mt-[30px] text-center font-bold tracking-[1.9px]'>{t("R-title-2")}</h1>
           <form className='w-full' onSubmit={addReviews}>
             <label>

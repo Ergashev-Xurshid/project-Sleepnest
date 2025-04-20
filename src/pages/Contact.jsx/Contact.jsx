@@ -80,7 +80,7 @@ function Contact() {
 
   return (
     <section className='w-full  max-w-[1450px] mx-auto px-4 lg:px-[20px]  pt-[100px]'>
-      <div className='flex items-center justify-between gap-[60px]'>
+      <div className='flex items-center flex-col lg:flex-row justify-between gap-[60px]'>
         <div data-aos="fade-right" className='flex-1 h-[600px]'>
           <h1 className='text-[32px] text-[#242825] font-bold my-[32px]'>{t("formTitle")}</h1>
           <form onSubmit={handleSubmit}>
@@ -111,7 +111,7 @@ function Contact() {
             <button className='hover:bg-black transition-all duration-300 py-[15px] cursor-pointer px-[60px] bg-[red] text-white rounded-[25px]' type='submit'>{t("sendButton")}</button>
           </form>
         </div>
-        <div className='flex-1 h-[700px]'>
+        <div className=' w-full lg:flex-1 h-[700px]'>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3067.6526359032846!2d64.459964!3d39.747453!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDQ0JzUwLjgiTiA2NMKwMjcnMzUuOSJF!5e0!3m2!1sru!2sus!4v1744807798037!5m2!1sru!2sus"
             width="100%"
@@ -125,18 +125,18 @@ function Contact() {
         </div>
       </div>
       <div>
-        <ul className='flex items-center justify-between mt-[100px]'>
+        <ul className='flex items-center md:flex-row max-md:gap-[20px] flex-col justify-between mt-[100px]'>
           <li className='flex items-center gap-5 cursor-pointer'>
             <RiMessage2Line color='red' size={40}/>
-            <p>Email: sleepnest@gmail.com</p>
+            <p className='max-md:text-[12px]'>Email: sleepnest@gmail.com</p>
           </li>
           <li className='flex items-center gap-5 cursor-pointer'>
             <FaPhoneVolume color='red' size={30}/>
-            <p>Тел: +998 94 033 72 12</p>
+            <p className='max-md:text-[12px]'>Тел: +998 94 033 72 12</p>
           </li>
           <li className='flex items-center gap-5 cursor-pointer'>
             <IoLocationOutline color='red' size={40}/>
-            <p>Bukhara, st. Alpomish 80</p>
+            <p className='max-md:text-[12px]'>Bukhara, st. Alpomish 80</p>
           </li>
         </ul>
       </div>

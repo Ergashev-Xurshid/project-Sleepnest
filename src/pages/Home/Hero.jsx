@@ -22,7 +22,7 @@ function Hero() {
           lg:left-[-140px]  lg:top-[-80px] 
           xl:left-[-200px]  xl:top-[-30px] '
         />
-        <div className='absolute  max-md:left-[40%] max-md:top-30  md:relative z-2'>
+        <div className='absolute  max-md:left-[30%] max-md:top-30  md:relative z-2'>
           <h1 className='sm:text-[20px] md:text-[20px] xl:text-[25px] font-bold leading-5 text-end'>{t("home-hero-title")}</h1>
           <p className='text-[25px] sm:text-[30px] md:text-[35px] xl:text-[55px] font-[600] text-[#a17f4a] text-end sm:my-[30px] leading-[30px] '>{t("home-hero-subTitle")}</p>
           <p className='text-[35px] sm:text-[40px] md:text-[55px] xl:text-[95px] font-[600] text-[#a17f4a] text-end sm:mb-[30px]'>{t("home-hero-text")}</p>

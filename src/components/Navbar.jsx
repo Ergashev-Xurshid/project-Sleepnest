@@ -5,6 +5,7 @@ import { FcLike } from "react-icons/fc";
 import { useFavoritesStore } from '../store/useFavoritesStore';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
+import HamburgerMenu from './HamburgerMenu';
 
 
 function Navbar() {
@@ -59,18 +60,19 @@ function Navbar() {
                   </Link>
                 </li>
               ))}
-              <a className='relative  text-[20px] cursor-pointer  py-[5px] px-2'>
+            </ul>
+            <a className='relative  text-[20px] cursor-pointer max-lg:mx-4 py-[5px] px-2'>
                 <FcLike size={30} />
                 <span className='inline-block absolute top-[1px] right-[-1px] text-white bg-black text-[8px] rounded-full py-[2px] px-[6px]'>
                   {count}
                 </span>
               </a>
-            </ul>
             <select value={LngValue} onChange={handleChange} className='text-[#ffffffa6]  text-[20px] font-bold cursor-pointer bg-[#a17f4a] rounded-xl py-[5px] px-[7px]'>
               <option value="eng">ENG</option>
               <option value="uz">UZ</option>
               <option value="ru">RU</option>
             </select>
+            <HamburgerMenu/>
           </nav>
         </div>
       </div>
