@@ -84,7 +84,8 @@ function Contact() {
         <div data-aos="fade-right" className='flex-1 h-[600px]'>
           <h1 className='text-[32px] text-[#242825] font-bold my-[32px]'>{t("formTitle")}</h1>
           <form onSubmit={handleSubmit}>
-            <input  
+            <input 
+              required 
               autoComplete='off'
               name='email'
               value={formData.email}
@@ -93,6 +94,7 @@ function Contact() {
               type="email"
               placeholder={t("emailPlaceholder")} />
             <input
+              required
               autoComplete='off'
               name='phone'
               value={formData.phone}
@@ -101,6 +103,7 @@ function Contact() {
               type="number"
               placeholder={t("phonePlaceholder")} />
             <textarea
+              required
               autoComplete='off'
               name='text'
               value={formData.text}
