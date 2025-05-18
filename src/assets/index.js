@@ -1,4 +1,4 @@
-export {default as logo } from "./header__icon-BxcC8k5d.png";
+export {default as logo } from "./logo-d.png";
 export {default as heroImg } from "./heroImg.png";
 export {default as banner1 } from "./banner-1.png";
 export {default as banner2 } from "./banner-2.png";
