@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 function Hero() {
   const { t } = useTranslation();
+  
  return (
     <div>
       <div className=' relative hero-keyframe text-[#7a5c33] rounded-[40px] flex justify-end pr-5 pt-[70px] 
