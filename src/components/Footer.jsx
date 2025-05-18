@@ -31,7 +31,7 @@ function Footer() {
       if (!response.ok) {
         throw new Error(`Telegramga yuborishda xatolik: ${response.status}`);
       }
-  
+      const result = await response.json();
       setFormEmail("")
       toast.success("Xabar muvaffaqiyatli yuborildi!");
     } catch (error) {
