@@ -2,9 +2,9 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-import uzTranslation from '../public/locales/uz.json';
-import enTranslation from '../public/locales/en.json';
-import ruTranslation from '../public/locales/ru.json';
+import uzTranslation from './locales/uz.json';
+import enTranslation from './locales/en.json';
+import ruTranslation from './locales/ru.json';
 
 
 const Lng = localStorage.getItem("i18nextLng") || "en"
