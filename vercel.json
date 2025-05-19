@@ -2,6 +2,10 @@
   "build": {
     "env": {
       "NPM_CONFIG_FORCE": "true"
-    }
+    },
+    "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
   }
 }
+
