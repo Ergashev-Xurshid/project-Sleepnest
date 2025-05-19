@@ -3,7 +3,7 @@ import './App.css'
 import { ToastContainer } from 'react-toastify';
 import About from './pages/About/About'
 import Contact from './pages/Contact.jsx/Contact'
-import Home from './pages/home/Home'
+import Home from './pages/Home/Home'
 import Toplam from './pages/Toplam/Toplam'
 // React Router
 import {
