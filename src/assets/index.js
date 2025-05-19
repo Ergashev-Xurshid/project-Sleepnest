@@ -18,7 +18,7 @@ export {default as productImg10 } from "./productImg10.jpg";
 
 //autm imges
 export {default as autmImg1 } from "./autmImg1.jpg";
-export {default as autmImg2 } from "./autmImg2.jpg";
+export {default as autmImg2 } from "./autmimg2.jpg";
 export {default as autmImg3 } from "./autmImg3.jpg";
 export {default as autmImg4 } from "./autmImg4.jpg";
 export {default as autmImg5 } from "./autmImg5.jpg";
