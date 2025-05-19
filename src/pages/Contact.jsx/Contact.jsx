@@ -40,8 +40,8 @@ function Contact() {
         Phone : ${formData.phone}\n
         Message : ${formData.text}
       `;
-      const telegramToken = "7357645059:AAGoMQ9vwK5SxjD-IxPnEbh5TWf6R-LcMF4";
-      const chatId = "6539046942";
+      const telegramToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;  // env dan o'qish
+      const chatId = import.meta.env.VITE_TELEGRAM_CHAT_ID;
   
       const response = await fetch(`https://api.telegram.org/bot${telegramToken}/sendMessage`, {
         method: "POST",
