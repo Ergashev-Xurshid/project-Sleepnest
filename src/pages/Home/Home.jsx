@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './Hero'
 import MainFeatures from './MainFeatures'
 import HomeNews from './HomeNews'
+import { Helmet } from 'react-helmet'
 
 
 

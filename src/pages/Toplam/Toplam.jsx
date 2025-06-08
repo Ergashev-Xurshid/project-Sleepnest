@@ -3,6 +3,7 @@ import { FaSearch } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
 import { useFavoritesStore } from '../../store/useFavoritesStore';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function Toplam() {
   const { products, toggleLike } = useFavoritesStore();

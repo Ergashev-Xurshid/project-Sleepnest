@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
+import { Helmet } from 'react-helmet';
 function Contact() {
   const { t } = useTranslation()
 

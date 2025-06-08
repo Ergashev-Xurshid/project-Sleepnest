@@ -1,6 +1,7 @@
 import React from 'react'
 import { aboutImg } from '../../assets'
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet'
 
 function About() {
   const { t } = useTranslation()
