@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Outlet } from 'react-router-dom'
 import TelegramButton from '../components/TelegramButton'
+import { ToastContainer } from 'react-toastify'
 
 function RootLayout() {
   return (
@@ -13,6 +14,7 @@ function RootLayout() {
       <main>
         <Outlet/>
         <TelegramButton/>
+        <ToastContainer />
       </main>
       <footer>
         <Footer/>

@@ -1,6 +1,5 @@
 
 import './App.css'
-import { ToastContainer } from 'react-toastify';
 import About from './pages/About/About'
 import Contact from './pages/Contact.jsx/Contact'
 import Home from './pages/Home/Home'
@@ -36,7 +35,6 @@ function App() {
 
   return (
     <>
-     <ToastContainer />
      <RouterProvider router={routes}/>
     </>
   )
